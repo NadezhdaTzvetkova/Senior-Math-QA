@@ -1,0 +1,154 @@
+{
+  "response": {
+    "request": {
+      "requestBody": {
+        "stake": "2.00",
+        "gameMode": "0",
+        "jackpotWon": false,
+        "gameType": "slot"
+      }
+    },
+    "body": {
+      "success": true,
+      "result": {
+        "win": {
+          "lines": "0.40",
+          "total": "0.40"
+        },
+        "winsMultipliers": {
+          "lines": "0.20",
+          "total": "0.20"
+        },
+        "stake": "2.00",
+        "multiplier": 1,
+        "winLines": [
+          {
+            "index": 3,
+            "start": 0,
+            "length": 3,
+            "tiles": [
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            "tile": 4,
+            "multiplier": 1,
+            "amount": "0.40",
+            "multipliedAmount": "0.40",
+            "extra": {
+              "type": "LTR",
+              "components": [
+                1
+              ]
+            }
+          }
+        ],
+        "spinMode": "Normal",
+        "collectorsBuffer": [],
+        "scatters": [],
+        "reelsBuffer": [
+          [
+            [
+              1,
+              2,
+              6
+            ],
+            [
+              4,
+              6,
+              6
+            ],
+            [
+              8,
+              1,
+              4
+            ]
+          ],
+          [
+            [
+              2,
+              5,
+              8
+            ],
+            [
+              6,
+              4,
+              5
+            ],
+            [
+              1,
+              2,
+              6
+            ]
+          ],
+          [
+            [
+              2,
+              8,
+              5
+            ],
+            [
+              2,
+              2,
+              4
+            ],
+            [
+              11,
+              2,
+              11
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              4
+            ],
+            [
+              1,
+              8,
+              4
+            ],
+            [
+              8,
+              6,
+              5
+            ]
+          ]
+        ],
+        "features": [],
+        "gameMode": 0,
+        "rngResults": [
+          3383820,
+          4,
+          4,
+          39,
+          35,
+          40,
+          6115854,
+          57,
+          60,
+          50,
+          6,
+          54,
+          5591,
+          573,
+          2026555,
+          8426155,
+          0,
+          1,
+          1,
+          0,
+          9834437,
+          7797,
+          3489,
+          6089,
+          7564
+        ],
+        "seed": 1942167265
+      }
+    }
+  }
+}

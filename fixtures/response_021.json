@@ -1,0 +1,189 @@
+{
+  "response": {
+    "request": {
+      "requestBody": {
+        "stake": "2.00",
+        "gameMode": "0",
+        "jackpotWon": false,
+        "gameType": "slot"
+      }
+    },
+    "body": {
+      "success": true,
+      "result": {
+        "win": {
+          "lines": "0.00",
+          "total": "0.00"
+        },
+        "winsMultipliers": {
+          "total": "0.00"
+        },
+        "stake": "2.00",
+        "multiplier": 1,
+        "spinMode": "Normal",
+        "collectors": [
+          {
+            "reel": 2,
+            "index": 1,
+            "tileId": 11,
+            "multiplier": 0,
+            "amount": "0.00"
+          },
+          {
+            "reel": 2,
+            "index": 2,
+            "tileId": 11,
+            "multiplier": 0,
+            "amount": "0.00"
+          },
+          {
+            "reel": 3,
+            "index": 0,
+            "tileId": 11,
+            "multiplier": 0,
+            "amount": "0.00"
+          },
+          {
+            "reel": 4,
+            "index": 1,
+            "tileId": 11,
+            "multiplier": 0,
+            "amount": "0.00"
+          },
+          {
+            "reel": 4,
+            "index": 2,
+            "tileId": 11,
+            "multiplier": 0,
+            "amount": "0.00"
+          }
+        ],
+        "scatters": [],
+        "reelsBuffer": [
+          [
+            [
+              3,
+              1,
+              9
+            ],
+            [
+              5,
+              3,
+              1
+            ],
+            [
+              7,
+              3,
+              1
+            ]
+          ],
+          [
+            [
+              6,
+              4,
+              2
+            ],
+            [
+              6,
+              4,
+              2
+            ],
+            [
+              8,
+              4,
+              2
+            ]
+          ],
+          [
+            [
+              5,
+              1,
+              7
+            ],
+            [
+              5,
+              11,
+              11
+            ],
+            [
+              7,
+              8,
+              4
+            ]
+          ],
+          [
+            [
+              8,
+              5,
+              1
+            ],
+            [
+              11,
+              8,
+              7
+            ],
+            [
+              3,
+              5,
+              2
+            ]
+          ],
+          [
+            [
+              8,
+              5,
+              7
+            ],
+            [
+              4,
+              11,
+              11
+            ],
+            [
+              9,
+              8,
+              2
+            ]
+          ]
+        ],
+        "features": [],
+        "gameMode": 0,
+        "rngResults": [
+          1244988,
+          7,
+          7,
+          41,
+          38,
+          40,
+          2710447,
+          2,
+          1,
+          19,
+          24,
+          20,
+          329,
+          9777939,
+          8762268,
+          267966,
+          8259103,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          7426174,
+          7784,
+          5027,
+          5817,
+          7930
+        ],
+        "seed": 1297467523
+      }
+    }
+  }
+}

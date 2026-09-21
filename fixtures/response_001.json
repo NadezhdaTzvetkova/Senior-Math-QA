@@ -1,0 +1,314 @@
+{
+  "response": {
+    "request": {
+      "requestBody": {
+        "stake": "2.00",
+        "gameMode": "0",
+        "jackpotWon": false,
+        "gameType": "slot"
+      }
+    },
+    "body": {
+      "success": true,
+      "result": {
+        "win": {
+          "lines": "4.80"
+        },
+        "winsMultipliers": {
+          "lines": "2.40",
+          "total": "2.40"
+        },
+        "stake": "2.00",
+        "multiplier": 1,
+        "winLines": [
+          {
+            "index": 2,
+            "start": 0,
+            "length": 3,
+            "tiles": [
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            "tile": 9,
+            "multiplier": 1,
+            "amount": "2.00",
+            "multipliedAmount": "2.00",
+            "extra": {
+              "type": "LTR",
+              "components": [
+                1
+              ]
+            }
+          },
+          {
+            "index": 7,
+            "start": 0,
+            "length": 3,
+            "tiles": [
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            "tile": 3,
+            "multiplier": 1,
+            "amount": "0.40",
+            "multipliedAmount": "0.40",
+            "extra": {
+              "type": "LTR",
+              "components": [
+                1
+              ]
+            }
+          },
+          {
+            "index": 8,
+            "start": 0,
+            "length": 3,
+            "tiles": [
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            "tile": 9,
+            "multiplier": 1,
+            "amount": "2.00",
+            "multipliedAmount": "2.00",
+            "extra": {
+              "type": "LTR",
+              "components": [
+                1
+              ]
+            }
+          },
+          {
+            "index": 9,
+            "start": 0,
+            "length": 3,
+            "tiles": [
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            "tile": 1,
+            "multiplier": 1,
+            "amount": "0.40",
+            "multipliedAmount": "0.40",
+            "extra": {
+              "type": "LTR",
+              "components": [
+                1
+              ]
+            }
+          }
+        ],
+        "spinMode": "Normal",
+        "collectors": [
+          {
+            "reel": 1,
+            "index": 0,
+            "tileId": 11,
+            "multiplier": 0,
+            "amount": "0.00"
+          },
+          {
+            "reel": 1,
+            "index": 2,
+            "tileId": 11,
+            "multiplier": 0,
+            "amount": "0.00"
+          },
+          {
+            "reel": 2,
+            "index": 1,
+            "tileId": 11,
+            "multiplier": 0,
+            "amount": "0.00"
+          },
+          {
+            "reel": 4,
+            "index": 1,
+            "tileId": 11,
+            "multiplier": 0,
+            "amount": "0.00"
+          }
+        ],
+        "cashSymbolsBuffer": [
+          {
+            "reel": 1,
+            "index": 3,
+            "tileId": 10,
+            "multiplier": 1,
+            "amount": "2.00"
+          },
+          {
+            "reel": 4,
+            "index": 4,
+            "tileId": 10,
+            "multiplier": 1,
+            "amount": "2.00"
+          }
+        ],
+        "scatters": [],
+        "reelsBuffer": [
+          [
+            [
+              1,
+              5,
+              7
+            ],
+            [
+              3,
+              1,
+              9
+            ],
+            [
+              5,
+              3,
+              1
+            ]
+          ],
+          [
+            [
+              4,
+              2,
+              8
+            ],
+            [
+              11,
+              2,
+              11
+            ],
+            [
+              10,
+              4,
+              2
+            ]
+          ],
+          [
+            [
+              9,
+              2,
+              1
+            ],
+            [
+              6,
+              11,
+              9
+            ],
+            [
+              8,
+              2,
+              4
+            ]
+          ],
+          [
+            [
+              2,
+              8,
+              3
+            ],
+            [
+              7,
+              6,
+              1
+            ],
+            [
+              9,
+              6,
+              4
+            ]
+          ],
+          [
+            [
+              1,
+              4,
+              3
+            ],
+            [
+              7,
+              11,
+              2
+            ],
+            [
+              6,
+              10,
+              4
+            ]
+          ]
+        ],
+        "features": [],
+        "gameMode": 0,
+        "rngResults": [
+          6254728,
+          31,
+          79,
+          56,
+          36,
+          62,
+          4362023,
+          10,
+          5,
+          5,
+          44,
+          36,
+          982,
+          9449509,
+          9019022,
+          2764817,
+          6820892,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2765202,
+          6253,
+          1155,
+          5951857,
+          2322521,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          5,
+          8,
+          11,
+          4,
+          1,
+          6,
+          7,
+          1,
+          0,
+          2,
+          2,
+          1,
+          0,
+          0,
+          3532163,
+          2176670,
+          3390566,
+          6498,
+          1666
+        ],
+        "seed": 696702568
+      }
+    }
+  }
+}

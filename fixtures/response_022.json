@@ -1,0 +1,2856 @@
+{
+  "response": {
+    "request": {
+      "requestBody": {
+        "stake": "2.00",
+        "gameMode": "0",
+        "jackpotWon": false,
+        "gameType": "slot"
+      }
+    },
+    "body": {
+      "success": true,
+      "result": {
+        "win": {
+          "freeSpins": "42.00",
+          "total": "42.00"
+        },
+        "winsMultipliers": {
+          "lines": "0.00",
+          "freeSpins": "21.00",
+          "total": "21.00"
+        },
+        "stake": "2.00",
+        "multiplier": 1,
+        "winLines": [],
+        "spinMode": "Normal",
+        "scatters": [
+          {
+            "reel": 0,
+            "index": 1,
+            "tileId": 12
+          },
+          {
+            "reel": 2,
+            "index": 0,
+            "tileId": 12
+          },
+          {
+            "reel": 4,
+            "index": 0,
+            "tileId": 12
+          }
+        ],
+        "initialSpins": 7,
+        "freeSpins": [
+          {
+            "win": {
+              "lines": "0.00",
+              "total": "0.00"
+            },
+            "winsMultipliers": {
+              "lines": "0.00",
+              "total": "0.00"
+            },
+            "stake": "2.00",
+            "multiplier": 1,
+            "winLines": [],
+            "spinMode": "FreeSpins",
+            "cashSymbols": [
+              {
+                "reel": 1,
+                "index": 2,
+                "tileId": 10,
+                "multiplier": 2,
+                "amount": "4.00"
+              }
+            ],
+            "reelsBuffer": [
+              [
+                [
+                  5,
+                  5,
+                  2
+                ],
+                [
+                  3,
+                  4,
+                  1
+                ],
+                [
+                  6,
+                  4,
+                  4
+                ]
+              ],
+              [
+                [
+                  4,
+                  3,
+                  1
+                ],
+                [
+                  3,
+                  6,
+                  10
+                ],
+                [
+                  2,
+                  1,
+                  5
+                ]
+              ],
+              [
+                [
+                  3,
+                  1,
+                  4
+                ],
+                [
+                  5,
+                  4,
+                  1
+                ],
+                [
+                  1,
+                  3,
+                  5
+                ]
+              ],
+              [
+                [
+                  4,
+                  2,
+                  3
+                ],
+                [
+                  1,
+                  1,
+                  2
+                ],
+                [
+                  6,
+                  4,
+                  5
+                ]
+              ],
+              [
+                [
+                  3,
+                  2,
+                  4
+                ],
+                [
+                  6,
+                  4,
+                  6
+                ],
+                [
+                  3,
+                  4,
+                  2
+                ]
+              ]
+            ]
+          },
+          {
+            "win": {
+              "respin": "36.00",
+              "lines": "0.00",
+              "total": "36.00"
+            },
+            "winsMultipliers": {
+              "respin": "18.00",
+              "lines": "0.00",
+              "total": "18.00"
+            },
+            "stake": "2.00",
+            "multiplier": 1,
+            "winLines": [],
+            "spinMode": "FreeSpins",
+            "cashSymbols": [
+              {
+                "reel": 0,
+                "index": 0,
+                "tileId": 10,
+                "multiplier": 1,
+                "amount": "2.00"
+              },
+              {
+                "reel": 1,
+                "index": 2,
+                "tileId": 10,
+                "multiplier": 1,
+                "amount": "2.00"
+              },
+              {
+                "reel": 3,
+                "index": 0,
+                "tileId": 10,
+                "multiplier": 5,
+                "amount": "10.00"
+              }
+            ],
+            "respin": [
+              {
+                "win": {
+                  "instantWin": "2.00",
+                  "lines": "0.00",
+                  "total": "2.00"
+                },
+                "winsMultipliers": {
+                  "instantWin": "1.00",
+                  "lines": "0.00",
+                  "total": "1.00"
+                },
+                "stake": "2.00",
+                "multiplier": 1,
+                "winLines": [],
+                "spinMode": "Respin",
+                "debugDepth": 400,
+                "cashSymbols": [
+                  {
+                    "reel": 2,
+                    "index": 2,
+                    "tileId": 10,
+                    "multiplier": 1,
+                    "amount": "2.00"
+                  }
+                ],
+                "collectors": [
+                  {
+                    "reel": 0,
+                    "index": 2,
+                    "tileId": 11,
+                    "multiplier": 1,
+                    "amount": "2.00"
+                  }
+                ],
+                "instantWin": {
+                  "multiplier": "1.00",
+                  "amount": "2.00",
+                  "options": [
+                    {
+                      "multiplier": "1.00",
+                      "amount": "2.00",
+                      "extras": {
+                        "multiplier": "1.00",
+                        "amount": "2.00",
+                        "components": [
+                          1
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "progress": {
+                  "current": 0,
+                  "next": 1
+                },
+                "progressDistribution": {
+                  "level1": 1,
+                  "level2": 0
+                },
+                "level": {
+                  "current": 0,
+                  "next": 0
+                },
+                "reelsBuffer": [
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      11
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      10
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ]
+                ]
+              },
+              {
+                "win": {
+                  "instantWin": "6.00",
+                  "lines": "0.00",
+                  "total": "6.00"
+                },
+                "winsMultipliers": {
+                  "instantWin": "3.00",
+                  "lines": "0.00",
+                  "total": "3.00"
+                },
+                "stake": "2.00",
+                "multiplier": 1,
+                "winLines": [],
+                "spinMode": "Respin",
+                "collectorsBuffer": [],
+                "debugDepth": 401,
+                "cashSymbols": [
+                  {
+                    "reel": 2,
+                    "index": 1,
+                    "tileId": 10,
+                    "multiplier": 2,
+                    "amount": "4.00"
+                  },
+                  {
+                    "reel": 4,
+                    "index": 1,
+                    "tileId": 10,
+                    "multiplier": 1,
+                    "amount": "2.00"
+                  }
+                ],
+                "cashSymbolsBuffer": [
+                  {
+                    "reel": 1,
+                    "index": 4,
+                    "tileId": 10,
+                    "multiplier": 2,
+                    "amount": "4.00"
+                  },
+                  {
+                    "reel": 3,
+                    "index": 4,
+                    "tileId": 10,
+                    "multiplier": 7,
+                    "amount": "14.00"
+                  },
+                  {
+                    "reel": 4,
+                    "index": 4,
+                    "tileId": 10,
+                    "multiplier": 2,
+                    "amount": "4.00"
+                  }
+                ],
+                "collectors": [
+                  {
+                    "reel": 0,
+                    "index": 0,
+                    "tileId": 11,
+                    "multiplier": 3,
+                    "amount": "6.00"
+                  }
+                ],
+                "instantWin": {
+                  "multiplier": "3.00",
+                  "amount": "6.00",
+                  "options": [
+                    {
+                      "multiplier": "2.00",
+                      "amount": "4.00",
+                      "extras": {
+                        "multiplier": "2.00",
+                        "amount": "4.00",
+                        "components": [
+                          1
+                        ]
+                      }
+                    },
+                    {
+                      "multiplier": "1.00",
+                      "amount": "2.00",
+                      "extras": {
+                        "multiplier": "1.00",
+                        "amount": "2.00",
+                        "components": [
+                          1
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "progress": {
+                  "current": 1,
+                  "next": 3
+                },
+                "progressDistribution": {
+                  "level1": 2,
+                  "level2": 0
+                },
+                "level": {
+                  "current": 0,
+                  "next": 0
+                },
+                "reelsBuffer": [
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      11,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      10,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      10,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ]
+                ]
+              },
+              {
+                "win": {
+                  "lines": "0.00",
+                  "total": "0.00"
+                },
+                "winsMultipliers": {
+                  "lines": "0.00",
+                  "total": "0.00"
+                },
+                "stake": "2.00",
+                "multiplier": 1,
+                "winLines": [],
+                "spinMode": "Respin",
+                "debugDepth": 403,
+                "cashSymbols": [
+                  {
+                    "reel": 3,
+                    "index": 0,
+                    "tileId": 10,
+                    "multiplier": 1,
+                    "amount": "2.00"
+                  },
+                  {
+                    "reel": 4,
+                    "index": 0,
+                    "tileId": 10,
+                    "multiplier": 1,
+                    "amount": "2.00"
+                  }
+                ],
+                "progress": {
+                  "current": 3,
+                  "next": 5
+                },
+                "progressDistribution": {
+                  "level1": 2,
+                  "level2": 0
+                },
+                "level": {
+                  "current": 0,
+                  "next": 0
+                },
+                "reelsBuffer": [
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      10,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      10,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ]
+                ]
+              },
+              {
+                "win": {
+                  "lines": "0.00",
+                  "total": "0.00"
+                },
+                "winsMultipliers": {
+                  "lines": "0.00",
+                  "total": "0.00"
+                },
+                "stake": "2.00",
+                "multiplier": 1,
+                "winLines": [],
+                "spinMode": "Respin",
+                "debugDepth": 405,
+                "cashSymbols": [
+                  {
+                    "reel": 1,
+                    "index": 0,
+                    "tileId": 10,
+                    "multiplier": 5,
+                    "amount": "10.00"
+                  }
+                ],
+                "progress": {
+                  "current": 5,
+                  "next": 6
+                },
+                "progressDistribution": {
+                  "level1": 1,
+                  "level2": 0
+                },
+                "level": {
+                  "current": 0,
+                  "next": 0
+                },
+                "reelsBuffer": [
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      10,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ]
+                ]
+              },
+              {
+                "win": {
+                  "lines": "0.00",
+                  "total": "0.00"
+                },
+                "winsMultipliers": {
+                  "lines": "0.00",
+                  "total": "0.00"
+                },
+                "stake": "2.00",
+                "multiplier": 1,
+                "winLines": [],
+                "spinMode": "Respin",
+                "debugDepth": 406,
+                "progress": {
+                  "current": 6,
+                  "next": 6
+                },
+                "progressDistribution": {
+                  "level1": 0,
+                  "level2": 0
+                },
+                "level": {
+                  "current": 0,
+                  "next": 0
+                },
+                "reelsBuffer": [
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ]
+                ]
+              },
+              {
+                "win": {
+                  "instantWin": "24.00",
+                  "lines": "0.00",
+                  "total": "24.00"
+                },
+                "winsMultipliers": {
+                  "instantWin": "12.00",
+                  "lines": "0.00",
+                  "total": "12.00"
+                },
+                "stake": "2.00",
+                "multiplier": 1,
+                "winLines": [],
+                "spinMode": "Respin",
+                "debugDepth": 406,
+                "cashSymbols": [
+                  {
+                    "reel": 3,
+                    "index": 0,
+                    "tileId": 10,
+                    "multiplier": 3,
+                    "amount": "6.00"
+                  }
+                ],
+                "collectors": [
+                  {
+                    "reel": 0,
+                    "index": 1,
+                    "tileId": 11,
+                    "multiplier": 3,
+                    "amount": "6.00"
+                  },
+                  {
+                    "reel": 2,
+                    "index": 2,
+                    "tileId": 11,
+                    "multiplier": 3,
+                    "amount": "6.00"
+                  },
+                  {
+                    "reel": 4,
+                    "index": 1,
+                    "tileId": 11,
+                    "multiplier": 3,
+                    "amount": "6.00"
+                  },
+                  {
+                    "reel": 4,
+                    "index": 2,
+                    "tileId": 11,
+                    "multiplier": 3,
+                    "amount": "6.00"
+                  }
+                ],
+                "instantWin": {
+                  "multiplier": "12.00",
+                  "amount": "24.00",
+                  "options": [
+                    {
+                      "multiplier": "3.00",
+                      "amount": "6.00",
+                      "extras": {
+                        "multiplier": "3.00",
+                        "amount": "6.00",
+                        "components": [
+                          1
+                        ]
+                      }
+                    },
+                    {
+                      "multiplier": "3.00",
+                      "amount": "6.00",
+                      "extras": {
+                        "multiplier": "3.00",
+                        "amount": "6.00",
+                        "components": [
+                          1
+                        ]
+                      }
+                    },
+                    {
+                      "multiplier": "3.00",
+                      "amount": "6.00",
+                      "extras": {
+                        "multiplier": "3.00",
+                        "amount": "6.00",
+                        "components": [
+                          1
+                        ]
+                      }
+                    },
+                    {
+                      "multiplier": "3.00",
+                      "amount": "6.00",
+                      "extras": {
+                        "multiplier": "3.00",
+                        "amount": "6.00",
+                        "components": [
+                          1
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "progress": {
+                  "current": 6,
+                  "next": 7
+                },
+                "progressDistribution": {
+                  "level1": 1,
+                  "level2": 0
+                },
+                "level": {
+                  "current": 0,
+                  "next": 0
+                },
+                "reelsBuffer": [
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      11,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      11
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      10,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      11,
+                      11
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ]
+                ]
+              },
+              {
+                "win": {
+                  "instantWin": "4.00",
+                  "lines": "0.00",
+                  "total": "4.00"
+                },
+                "winsMultipliers": {
+                  "instantWin": "2.00",
+                  "lines": "0.00",
+                  "total": "2.00"
+                },
+                "stake": "2.00",
+                "multiplier": 1,
+                "winLines": [],
+                "spinMode": "Respin",
+                "debugDepth": 407,
+                "cashSymbols": [
+                  {
+                    "reel": 0,
+                    "index": 2,
+                    "tileId": 10,
+                    "multiplier": 1,
+                    "amount": "2.00"
+                  }
+                ],
+                "collectors": [
+                  {
+                    "reel": 3,
+                    "index": 1,
+                    "tileId": 11,
+                    "multiplier": 1,
+                    "amount": "2.00"
+                  },
+                  {
+                    "reel": 3,
+                    "index": 2,
+                    "tileId": 11,
+                    "multiplier": 1,
+                    "amount": "2.00"
+                  }
+                ],
+                "instantWin": {
+                  "multiplier": "2.00",
+                  "amount": "4.00",
+                  "options": [
+                    {
+                      "multiplier": "1.00",
+                      "amount": "2.00",
+                      "extras": {
+                        "multiplier": "1.00",
+                        "amount": "2.00",
+                        "components": [
+                          1
+                        ]
+                      }
+                    },
+                    {
+                      "multiplier": "1.00",
+                      "amount": "2.00",
+                      "extras": {
+                        "multiplier": "1.00",
+                        "amount": "2.00",
+                        "components": [
+                          1
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "isLast": true,
+                "progress": {
+                  "current": 7,
+                  "next": 8
+                },
+                "progressDistribution": {
+                  "level1": 1,
+                  "level2": 0
+                },
+                "level": {
+                  "current": 0,
+                  "next": 0
+                },
+                "reelsBuffer": [
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      10
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      11,
+                      11
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ],
+                  [
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ],
+                    [
+                      15,
+                      15,
+                      15
+                    ]
+                  ]
+                ]
+              }
+            ],
+            "reelsBuffer": [
+              [
+                [
+                  8,
+                  8,
+                  3
+                ],
+                [
+                  10,
+                  8,
+                  3
+                ],
+                [
+                  8,
+                  4,
+                  8
+                ]
+              ],
+              [
+                [
+                  8,
+                  4,
+                  3
+                ],
+                [
+                  3,
+                  8,
+                  10
+                ],
+                [
+                  4,
+                  4,
+                  3
+                ]
+              ],
+              [
+                [
+                  8,
+                  3,
+                  8
+                ],
+                [
+                  3,
+                  4,
+                  4
+                ],
+                [
+                  8,
+                  3,
+                  8
+                ]
+              ],
+              [
+                [
+                  4,
+                  4,
+                  8
+                ],
+                [
+                  10,
+                  8,
+                  4
+                ],
+                [
+                  8,
+                  4,
+                  4
+                ]
+              ],
+              [
+                [
+                  4,
+                  3,
+                  8
+                ],
+                [
+                  4,
+                  8,
+                  4
+                ],
+                [
+                  4,
+                  3,
+                  3
+                ]
+              ]
+            ]
+          },
+          {
+            "win": {
+              "lines": "0.00",
+              "total": "0.00"
+            },
+            "winsMultipliers": {
+              "lines": "0.00",
+              "total": "0.00"
+            },
+            "stake": "2.00",
+            "multiplier": 1,
+            "winLines": [],
+            "spinMode": "FreeSpins",
+            "cashSymbols": [
+              {
+                "reel": 4,
+                "index": 1,
+                "tileId": 10,
+                "multiplier": 1,
+                "amount": "2.00"
+              }
+            ],
+            "reelsBuffer": [
+              [
+                [
+                  5,
+                  2,
+                  1
+                ],
+                [
+                  9,
+                  9,
+                  2
+                ],
+                [
+                  6,
+                  5,
+                  2
+                ]
+              ],
+              [
+                [
+                  6,
+                  9,
+                  1
+                ],
+                [
+                  3,
+                  9,
+                  3
+                ],
+                [
+                  5,
+                  2,
+                  1
+                ]
+              ],
+              [
+                [
+                  1,
+                  3,
+                  6
+                ],
+                [
+                  9,
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  6,
+                  1
+                ]
+              ],
+              [
+                [
+                  1,
+                  9,
+                  5
+                ],
+                [
+                  5,
+                  3,
+                  2
+                ],
+                [
+                  5,
+                  1,
+                  2
+                ]
+              ],
+              [
+                [
+                  9,
+                  9,
+                  1
+                ],
+                [
+                  6,
+                  10,
+                  6
+                ],
+                [
+                  6,
+                  5,
+                  6
+                ]
+              ]
+            ]
+          },
+          {
+            "win": {
+              "lines": "5.20",
+              "total": "5.20"
+            },
+            "winsMultipliers": {
+              "lines": "2.60",
+              "total": "2.60"
+            },
+            "stake": "2.00",
+            "multiplier": 1,
+            "winLines": [
+              {
+                "index": 0,
+                "start": 0,
+                "length": 4,
+                "tiles": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  0
+                ],
+                "tile": 5,
+                "multiplier": 1,
+                "amount": "3.40",
+                "multipliedAmount": "3.40",
+                "extra": {
+                  "type": "LTR",
+                  "components": [
+                    1
+                  ]
+                }
+              },
+              {
+                "index": 1,
+                "start": 0,
+                "length": 4,
+                "tiles": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  0
+                ],
+                "tile": 1,
+                "multiplier": 1,
+                "amount": "1.40",
+                "multipliedAmount": "1.40",
+                "extra": {
+                  "type": "LTR",
+                  "components": [
+                    1
+                  ]
+                }
+              },
+              {
+                "index": 2,
+                "start": 0,
+                "length": 3,
+                "tiles": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0
+                ],
+                "tile": 1,
+                "multiplier": 1,
+                "amount": "0.40",
+                "multipliedAmount": "0.40",
+                "extra": {
+                  "type": "LTR",
+                  "components": [
+                    1
+                  ]
+                }
+              }
+            ],
+            "spinMode": "FreeSpins",
+            "cashSymbols": [
+              {
+                "reel": 4,
+                "index": 1,
+                "tileId": 10,
+                "multiplier": 3,
+                "amount": "6.00"
+              }
+            ],
+            "reelsBuffer": [
+              [
+                [
+                  5,
+                  5,
+                  4
+                ],
+                [
+                  1,
+                  5,
+                  1
+                ],
+                [
+                  5,
+                  1,
+                  1
+                ]
+              ],
+              [
+                [
+                  4,
+                  1,
+                  5
+                ],
+                [
+                  1,
+                  5,
+                  1
+                ],
+                [
+                  4,
+                  5,
+                  1
+                ]
+              ],
+              [
+                [
+                  4,
+                  1,
+                  5
+                ],
+                [
+                  1,
+                  5,
+                  1
+                ],
+                [
+                  5,
+                  5,
+                  5
+                ]
+              ],
+              [
+                [
+                  4,
+                  5,
+                  4
+                ],
+                [
+                  1,
+                  5,
+                  4
+                ],
+                [
+                  4,
+                  1,
+                  4
+                ]
+              ],
+              [
+                [
+                  4,
+                  4,
+                  5
+                ],
+                [
+                  5,
+                  10,
+                  1
+                ],
+                [
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            ]
+          },
+          {
+            "win": {
+              "lines": "0.40",
+              "total": "0.40"
+            },
+            "winsMultipliers": {
+              "lines": "0.20",
+              "total": "0.20"
+            },
+            "stake": "2.00",
+            "multiplier": 1,
+            "winLines": [
+              {
+                "index": 0,
+                "start": 0,
+                "length": 3,
+                "tiles": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0
+                ],
+                "tile": 4,
+                "multiplier": 1,
+                "amount": "0.40",
+                "multipliedAmount": "0.40",
+                "extra": {
+                  "type": "LTR",
+                  "components": [
+                    1
+                  ]
+                }
+              }
+            ],
+            "spinMode": "FreeSpins",
+            "collectorsBuffer": [],
+            "cashSymbolsBuffer": [
+              {
+                "reel": 1,
+                "index": 3,
+                "tileId": 10,
+                "multiplier": 3,
+                "amount": "6.00"
+              },
+              {
+                "reel": 1,
+                "index": 4,
+                "tileId": 10,
+                "multiplier": 1,
+                "amount": "2.00"
+              },
+              {
+                "reel": 2,
+                "index": 3,
+                "tileId": 10,
+                "multiplier": 1,
+                "amount": "2.00"
+              },
+              {
+                "reel": 3,
+                "index": 3,
+                "tileId": 10,
+                "multiplier": 3,
+                "amount": "6.00"
+              }
+            ],
+            "reelsBuffer": [
+              [
+                [
+                  6,
+                  1,
+                  4
+                ],
+                [
+                  4,
+                  4,
+                  6
+                ],
+                [
+                  1,
+                  4,
+                  6
+                ]
+              ],
+              [
+                [
+                  4,
+                  1,
+                  4
+                ],
+                [
+                  1,
+                  4,
+                  1
+                ],
+                [
+                  10,
+                  10,
+                  11
+                ]
+              ],
+              [
+                [
+                  1,
+                  1,
+                  6
+                ],
+                [
+                  1,
+                  4,
+                  1
+                ],
+                [
+                  10,
+                  6,
+                  1
+                ]
+              ],
+              [
+                [
+                  1,
+                  1,
+                  6
+                ],
+                [
+                  4,
+                  6,
+                  4
+                ],
+                [
+                  10,
+                  1,
+                  1
+                ]
+              ],
+              [
+                [
+                  6,
+                  4,
+                  6
+                ],
+                [
+                  6,
+                  1,
+                  1
+                ],
+                [
+                  4,
+                  1,
+                  1
+                ]
+              ]
+            ]
+          },
+          {
+            "win": {
+              "lines": "0.00",
+              "total": "0.00"
+            },
+            "winsMultipliers": {
+              "lines": "0.00",
+              "total": "0.00"
+            },
+            "stake": "2.00",
+            "multiplier": 1,
+            "winLines": [],
+            "spinMode": "FreeSpins",
+            "cashSymbols": [
+              {
+                "reel": 0,
+                "index": 1,
+                "tileId": 10,
+                "multiplier": 5,
+                "amount": "10.00"
+              }
+            ],
+            "reelsBuffer": [
+              [
+                [
+                  1,
+                  4,
+                  2
+                ],
+                [
+                  1,
+                  10,
+                  2
+                ],
+                [
+                  4,
+                  1,
+                  2
+                ]
+              ],
+              [
+                [
+                  2,
+                  5,
+                  8
+                ],
+                [
+                  6,
+                  4,
+                  5
+                ],
+                [
+                  1,
+                  2,
+                  6
+                ]
+              ],
+              [
+                [
+                  2,
+                  8,
+                  1
+                ],
+                [
+                  6,
+                  8,
+                  1
+                ],
+                [
+                  4,
+                  5,
+                  2
+                ]
+              ],
+              [
+                [
+                  6,
+                  8,
+                  1
+                ],
+                [
+                  5,
+                  8,
+                  6
+                ],
+                [
+                  1,
+                  4,
+                  1
+                ]
+              ],
+              [
+                [
+                  4,
+                  8,
+                  4
+                ],
+                [
+                  5,
+                  4,
+                  1
+                ],
+                [
+                  6,
+                  8,
+                  1
+                ]
+              ]
+            ]
+          },
+          {
+            "win": {
+              "lines": "0.40",
+              "total": "0.40"
+            },
+            "winsMultipliers": {
+              "lines": "0.20",
+              "total": "0.20"
+            },
+            "stake": "2.00",
+            "multiplier": 1,
+            "winLines": [
+              {
+                "index": 0,
+                "start": 0,
+                "length": 3,
+                "tiles": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0
+                ],
+                "tile": 2,
+                "multiplier": 1,
+                "amount": "0.40",
+                "multipliedAmount": "0.40",
+                "extra": {
+                  "type": "LTR",
+                  "components": [
+                    1
+                  ]
+                }
+              }
+            ],
+            "spinMode": "FreeSpins",
+            "winScatters": [
+              {
+                "reel": 4,
+                "index": 1,
+                "tileId": 13
+              }
+            ],
+            "collectors": [
+              {
+                "reel": 3,
+                "index": 2,
+                "tileId": 11,
+                "multiplier": 0,
+                "amount": "0.00"
+              }
+            ],
+            "cashSymbolsBuffer": [
+              {
+                "reel": 0,
+                "index": 3,
+                "tileId": 10,
+                "multiplier": 2,
+                "amount": "4.00"
+              },
+              {
+                "reel": 0,
+                "index": 4,
+                "tileId": 10,
+                "multiplier": 2,
+                "amount": "4.00"
+              },
+              {
+                "reel": 1,
+                "index": 5,
+                "tileId": 10,
+                "multiplier": 3,
+                "amount": "6.00"
+              },
+              {
+                "reel": 4,
+                "index": 4,
+                "tileId": 10,
+                "multiplier": 1,
+                "amount": "2.00"
+              }
+            ],
+            "reelsBuffer": [
+              [
+                [
+                  6,
+                  2,
+                  3
+                ],
+                [
+                  3,
+                  2,
+                  6
+                ],
+                [
+                  10,
+                  10,
+                  6
+                ]
+              ],
+              [
+                [
+                  2,
+                  2,
+                  3
+                ],
+                [
+                  3,
+                  2,
+                  6
+                ],
+                [
+                  6,
+                  6,
+                  10
+                ]
+              ],
+              [
+                [
+                  2,
+                  6,
+                  2
+                ],
+                [
+                  2,
+                  2,
+                  3
+                ],
+                [
+                  3,
+                  6,
+                  2
+                ]
+              ],
+              [
+                [
+                  2,
+                  6,
+                  2
+                ],
+                [
+                  6,
+                  6,
+                  11
+                ],
+                [
+                  6,
+                  3,
+                  6
+                ]
+              ],
+              [
+                [
+                  3,
+                  6,
+                  6
+                ],
+                [
+                  2,
+                  13,
+                  3
+                ],
+                [
+                  2,
+                  10,
+                  6
+                ]
+              ]
+            ]
+          }
+        ],
+        "activator": {
+          "features": [
+            "Chance",
+            "FreeSpins",
+            "Mode_13"
+          ]
+        },
+        "reelsBuffer": [
+          [
+            [
+              4,
+              1,
+              2
+            ],
+            [
+              5,
+              12,
+              5
+            ],
+            [
+              6,
+              6,
+              2
+            ]
+          ],
+          [
+            [
+              8,
+              2,
+              1
+            ],
+            [
+              8,
+              4,
+              6
+            ],
+            [
+              4,
+              4,
+              4
+            ]
+          ],
+          [
+            [
+              6,
+              2,
+              4
+            ],
+            [
+              12,
+              6,
+              1
+            ],
+            [
+              5,
+              5,
+              8
+            ]
+          ],
+          [
+            [
+              5,
+              4,
+              4
+            ],
+            [
+              5,
+              6,
+              6
+            ],
+            [
+              1,
+              1,
+              4
+            ]
+          ],
+          [
+            [
+              8,
+              6,
+              6
+            ],
+            [
+              12,
+              1,
+              1
+            ],
+            [
+              5,
+              4,
+              1
+            ]
+          ]
+        ],
+        "features": [],
+        "gameMode": 0,
+        "rngResults": [
+          1025271,
+          3,
+          1,
+          33,
+          23,
+          1,
+          6533172,
+          72,
+          13,
+          19,
+          72,
+          43,
+          5592,
+          5888,
+          3689,
+          6219,
+          1228,
+          9916014,
+          1873475,
+          0,
+          2,
+          0,
+          0,
+          1,
+          1,
+          0,
+          2,
+          1,
+          0,
+          2164672,
+          1487466,
+          1203833,
+          6,
+          8,
+          20,
+          29,
+          15,
+          4266547,
+          64,
+          11,
+          32,
+          34,
+          7,
+          4980,
+          4257,
+          3072,
+          2117409,
+          1627427,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          1,
+          1,
+          11,
+          1,
+          4,
+          8,
+          1,
+          1,
+          4,
+          0,
+          1,
+          2,
+          1,
+          0,
+          5169312,
+          5501,
+          3211350,
+          5281546,
+          41,
+          49,
+          45,
+          51,
+          56,
+          8785991,
+          17,
+          30,
+          59,
+          16,
+          1,
+          3868,
+          4077,
+          293,
+          3087416,
+          9336227,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          11,
+          3,
+          4,
+          7,
+          2,
+          8,
+          3,
+          6,
+          1,
+          4,
+          3,
+          1,
+          0,
+          0,
+          3413718,
+          410,
+          5094421,
+          4701694,
+          8,
+          0,
+          4,
+          33,
+          35,
+          8978819,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4449,
+          128150,
+          5901335,
+          0,
+          0,
+          1,
+          0,
+          5369718,
+          6686,
+          3059,
+          8019988,
+          2421183,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          8,
+          4,
+          10,
+          0,
+          4,
+          0,
+          4,
+          5,
+          2,
+          2,
+          1,
+          1,
+          0,
+          5868447,
+          104409,
+          5100,
+          6567553,
+          72,
+          1,
+          11,
+          17,
+          59,
+          5424982,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1975,
+          445348,
+          7659474,
+          0,
+          2,
+          1,
+          0,
+          3790674,
+          1892,
+          6172392,
+          5139578,
+          0,
+          1,
+          1,
+          0,
+          7215506,
+          6729,
+          1162959,
+          5387509,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          9,
+          10,
+          3,
+          2,
+          4,
+          0,
+          3,
+          4,
+          0,
+          1,
+          0,
+          0,
+          0,
+          303129,
+          5188458,
+          2448953,
+          1472,
+          3826151,
+          5697269,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          2,
+          6,
+          0,
+          1,
+          0,
+          0,
+          0,
+          5,
+          3,
+          0,
+          2,
+          1,
+          0,
+          660984,
+          4102855,
+          8991227,
+          3981438,
+          5979696,
+          48,
+          76,
+          47,
+          68,
+          17,
+          7296583,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7502,
+          9229,
+          530,
+          3386645,
+          8371546,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          13,
+          2,
+          1,
+          4,
+          1,
+          4,
+          6,
+          5,
+          4,
+          3,
+          3,
+          0,
+          1,
+          0,
+          4234320,
+          2034212,
+          2425996,
+          4794,
+          3801519,
+          7,
+          5,
+          3,
+          19,
+          16,
+          7793524,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7323,
+          3549,
+          1729,
+          4424334,
+          1097770,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0,
+          4,
+          10,
+          7,
+          7,
+          6,
+          0,
+          4,
+          1,
+          1,
+          1,
+          2,
+          0,
+          0,
+          38689,
+          8156480,
+          9944,
+          8082185,
+          32,
+          54,
+          48,
+          16,
+          86,
+          3503741,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9851,
+          5789,
+          7537,
+          3213,
+          5636415,
+          20,
+          68,
+          24,
+          43,
+          63,
+          3083575,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4287,
+          9717968,
+          9049096,
+          756353,
+          6603792,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7083675,
+          4234,
+          3325,
+          6011910,
+          2747516,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          6,
+          6,
+          1,
+          6,
+          2,
+          3,
+          3,
+          0,
+          0,
+          0,
+          5718994,
+          5648351,
+          6511,
+          1689511,
+          6,
+          8,
+          5,
+          13,
+          13,
+          8000236,
+          0,
+          0,
+          0,
+          0,
+          0,
+          195,
+          5924535,
+          9487967,
+          0,
+          0,
+          1,
+          0,
+          2404361,
+          8312,
+          1176,
+          7159666,
+          2212231,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          10,
+          7,
+          5,
+          8,
+          7,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          4188384,
+          2411213,
+          5564,
+          714570,
+          2336679,
+          8195431,
+          550573,
+          3,
+          4,
+          0,
+          0,
+          40,
+          4068593,
+          62,
+          43,
+          34,
+          20,
+          39,
+          8663,
+          9665,
+          3746,
+          7850836,
+          37606,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          8,
+          10,
+          1,
+          3,
+          6,
+          5,
+          6,
+          0,
+          1,
+          3,
+          2,
+          2,
+          0,
+          0,
+          2188039,
+          2313,
+          2204754,
+          56004,
+          8,
+          2,
+          37,
+          10,
+          18,
+          9126923,
+          67,
+          46,
+          25,
+          68,
+          40,
+          8171,
+          6796,
+          2622,
+          7624018,
+          3730804,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          5117021,
+          8969,
+          7054460,
+          6603913,
+          39,
+          48,
+          20,
+          1,
+          35,
+          9343952,
+          42,
+          27,
+          1,
+          77,
+          17,
+          5229,
+          931,
+          1247536,
+          2372849,
+          0,
+          1,
+          0,
+          0,
+          4098660,
+          8525,
+          1388,
+          6983964,
+          6271670,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          9,
+          10,
+          2,
+          7,
+          1,
+          2,
+          0,
+          2,
+          0,
+          3,
+          2,
+          0,
+          0,
+          8863505,
+          6878662,
+          189104,
+          811625,
+          7322013,
+          8344485,
+          38,
+          25,
+          44,
+          35,
+          39,
+          2934950,
+          66,
+          60,
+          57,
+          40,
+          77,
+          8681,
+          4975,
+          1176,
+          9607444,
+          1580463,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          12,
+          2,
+          2,
+          0,
+          6,
+          2,
+          5,
+          4,
+          3,
+          2,
+          2,
+          0,
+          0,
+          3196915,
+          6644,
+          8630210,
+          4021102,
+          3,
+          3,
+          16,
+          2,
+          38,
+          7366480,
+          72,
+          66,
+          55,
+          54,
+          31,
+          708,
+          1185357,
+          6813005,
+          0,
+          0,
+          0,
+          0,
+          4240251,
+          1597,
+          2449437,
+          196079,
+          0,
+          1,
+          0,
+          0,
+          460189,
+          8801,
+          2268,
+          4529097,
+          6816321,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          8,
+          7,
+          9,
+          10,
+          4,
+          4,
+          3,
+          2,
+          2,
+          3,
+          0,
+          1,
+          1,
+          0,
+          4615757,
+          3883119,
+          4134744,
+          7288659,
+          16634
+        ],
+        "seed": 1906433645
+      }
+    }
+  }
+}

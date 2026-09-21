@@ -1,0 +1,39 @@
+Senior Automation QA Take-Home Task
+
+You are given a dataset of slot-spin API response fixtures and a specification document describing expected behavior.
+
+Your objective is to build an automated validation suite from scratch that checks whether the responses comply with the specification.
+
+Scope:
+
+Validate structural correctness of responses.
+Validate data types and format rules.
+Validate cross-field consistency and calculation coherence.
+Detect and report all deviations from the specification.
+Constraints:
+
+Use Java.
+Do not rely on existing project test framework code.
+Keep execution efficient for the full fixture set.
+Prioritize readability and maintainability of tests.
+Deliverables:
+
+Source code for the automated tests.
+Instructions to run the suite.
+A results report listing detected issues, including:
+response file name
+violated rule
+short explanation
+Short note describing your test design decisions and trade-offs.
+What we evaluate:
+
+Defect detection quality and coverage.
+Correct interpretation of the specification.
+Clarity and maintainability of test architecture.
+Usefulness of failure output for debugging.
+Runtime efficiency.
+Important notes:
+
+Some fixtures are intentionally inconsistent with the specification.
+Treat the specification as the source of truth.
+Do not infer expected behavior from frequency patterns in the data.

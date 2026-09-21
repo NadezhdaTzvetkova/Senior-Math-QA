@@ -1,0 +1,261 @@
+{
+  "response": {
+    "request": {
+      "requestBody": {
+        "stake": "2.00",
+        "gameMode": "0",
+        "jackpotWon": false,
+        "gameType": "slot"
+      }
+    },
+    "body": {
+      "success": true,
+      "result": {
+        "win": {
+          "instantWin": "4.00",
+          "lines": "1.40",
+          "total": "5.41"
+        },
+        "winsMultipliers": {
+          "instantWin": "2.00",
+          "lines": "0.70",
+          "total": "2.70"
+        },
+        "stake": "2.00",
+        "multiplier": 1,
+        "winLines": [
+          {
+            "index": 1,
+            "start": 0,
+            "length": 4,
+            "tiles": [
+              1,
+              1,
+              1,
+              1,
+              0
+            ],
+            "tile": 2,
+            "multiplier": 1,
+            "amount": "1.40",
+            "multipliedAmount": "1.40",
+            "extra": {
+              "type": "LTR",
+              "components": [
+                1
+              ]
+            }
+          }
+        ],
+        "spinMode": "Normal",
+        "collectors": [
+          {
+            "reel": 0,
+            "index": 0,
+            "tileId": 11,
+            "multiplier": 1,
+            "amount": "2.00"
+          },
+          {
+            "reel": 2,
+            "index": 0,
+            "tileId": 11,
+            "multiplier": 1,
+            "amount": "2.00"
+          }
+        ],
+        "cashSymbols": [
+          {
+            "reel": 3,
+            "index": 2,
+            "tileId": 10,
+            "multiplier": 1,
+            "amount": "2.00"
+          }
+        ],
+        "instantWin": {
+          "multiplier": "2.00",
+          "amount": "4.00",
+          "options": [
+            {
+              "multiplier": "1.00",
+              "amount": "2.00",
+              "extras": {
+                "multiplier": "1.00",
+                "amount": "2.00",
+                "components": [
+                  1
+                ]
+              }
+            },
+            {
+              "multiplier": "1.00",
+              "amount": "2.00",
+              "extras": {
+                "multiplier": "1.00",
+                "amount": "2.00",
+                "components": [
+                  1
+                ]
+              }
+            }
+          ]
+        },
+        "scatters": [
+          {
+            "reel": 0,
+            "index": 2,
+            "tileId": 12
+          }
+        ],
+        "reelsBuffer": [
+          [
+            [
+              5,
+              7,
+              3
+            ],
+            [
+              11,
+              9,
+              12
+            ],
+            [
+              3,
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              8,
+              6,
+              4
+            ],
+            [
+              2,
+              6,
+              4
+            ],
+            [
+              2,
+              8,
+              4
+            ]
+          ],
+          [
+            [
+              5,
+              2,
+              3
+            ],
+            [
+              11,
+              8,
+              4
+            ],
+            [
+              6,
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              6,
+              1,
+              7
+            ],
+            [
+              2,
+              3,
+              10
+            ],
+            [
+              7,
+              9,
+              1
+            ]
+          ],
+          [
+            [
+              2,
+              1,
+              7
+            ],
+            [
+              3,
+              8,
+              5
+            ],
+            [
+              7,
+              4,
+              5
+            ]
+          ]
+        ],
+        "features": [],
+        "gameMode": 0,
+        "rngResults": [
+          1121270,
+          10,
+          0,
+          44,
+          24,
+          42,
+          1256968,
+          0,
+          0,
+          22,
+          11,
+          16,
+          423,
+          4270899,
+          2353484,
+          2029030,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          45297,
+          2278,
+          2050555,
+          3392365,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          11,
+          2,
+          0,
+          1,
+          3,
+          2,
+          5,
+          4,
+          1,
+          2,
+          1,
+          0,
+          2686679,
+          1273884,
+          1022,
+          1592019,
+          3270772,
+          0,
+          0,
+          0,
+          8448465
+        ],
+        "seed": 965225869
+      }
+    }
+  }
+}
