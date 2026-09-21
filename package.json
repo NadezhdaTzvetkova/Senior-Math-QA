@@ -7,15 +7,22 @@
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "coverage": "vitest run --coverage"
   },
   "keywords": [],
   "type": "module",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/node": "^24.13.6",
+    "@typescript-eslint/eslint-plugin": "^8.70.0",
+    "@typescript-eslint/parser": "^8.70.0",
+    "@vitest/coverage-v8": "^5.0.1",
+    "allure-vitest": "^3.12.2",
     "eslint": "^10.11.0",
     "prettier": "^3.9.8",
-    "typescript": "^7.0.2",
+    "typescript": "^6.0.3",
     "vitest": "^5.0.1"
   },
   "engines": {

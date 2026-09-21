@@ -2,7 +2,6 @@ node_modules/
 dist/
 coverage/
 allure-results/
-reports/json/*.json
-.env
-.DS_Store
-*.log
+reports/
+fixtures/
+docs/source/
