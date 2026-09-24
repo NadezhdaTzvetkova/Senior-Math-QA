@@ -6,7 +6,7 @@ import {
   parseCliArguments,
   parseGameValidationConfig,
   selectRules,
-} from '../src/cli.js';
+} from '../src/cli-core.js';
 import type { ValidationReportDocument } from '../src/run-validation.js';
 
 describe('CLI argument parsing', () => {

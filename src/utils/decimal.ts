@@ -1,4 +1,4 @@
-﻿export function parseMinorUnits(value: unknown): number | undefined {
+export function parseMinorUnits(value: unknown): number | undefined {
   if (typeof value !== 'string' || !/^-?\d+\.\d{2}$/.test(value)) {
     return undefined;
   }
@@ -31,5 +31,9 @@ export function multiplyMinorUnits(amountMinor: number, multiplier: number): num
 
   const value = amountMinor * multiplier;
 
-  return Number.isSafeInteger(value) ? value : undefined;
+  if (!Number.isSafeInteger(value)) {
+    return undefined;
+  }
+
+  return value === 0 ? 0 : value;
 }
