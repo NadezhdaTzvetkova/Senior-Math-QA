@@ -1,4 +1,4 @@
-﻿import { mkdirSync, readFileSync, readdirSync, renameSync, rmSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, readdirSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { basename, dirname, join } from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
@@ -77,12 +77,13 @@ export function evaluateFixtures(
 export function buildReportDocument(
   fixturesDirectory: string,
   summaries: readonly FixtureValidationSummary[],
+  ruleCount: number = ALL_RULES.length,
 ): ValidationReportDocument {
   return {
     generatedFrom: {
       fixtureDirectory: fixturesDirectory,
       fixtureCount: summaries.length,
-      ruleCount: ALL_RULES.length,
+      ruleCount,
     },
     aggregate: summarizeReport(summaries),
     fixtures: summaries,
@@ -108,12 +109,19 @@ export function writeReports(
   document: ValidationReportDocument,
   humanReportPath: string,
   jsonReportPath: string,
+  format: 'both' | 'human' | 'json' = 'both',
 ): void {
-  const humanContents = formatHumanReport(document.fixtures);
-  const jsonContents = `${JSON.stringify(document, null, 2)}\n`;
+  if (format === 'both' || format === 'human') {
+    atomicWrite(humanReportPath, formatHumanReport(document.fixtures));
+  } else {
+    rmSync(humanReportPath, { force: true });
+  }
 
-  atomicWrite(humanReportPath, humanContents);
-  atomicWrite(jsonReportPath, jsonContents);
+  if (format === 'both' || format === 'json') {
+    atomicWrite(jsonReportPath, `${JSON.stringify(document, null, 2)}\n`);
+  } else {
+    rmSync(jsonReportPath, { force: true });
+  }
 }
 
 export function runValidation(options: ValidationRunOptions): ValidationReportDocument {

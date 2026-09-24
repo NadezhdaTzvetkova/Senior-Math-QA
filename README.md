@@ -1,4 +1,4 @@
-﻿# Senior Math QA — Specification-Driven Validation Suite
+# Senior Math QA — Specification-Driven Validation Suite
 
 TypeScript validation framework for the Senior Math QA take-home exercise. The suite validates the supplied slot-spin API response fixtures against the provided candidate specification, focusing on contract correctness, runtime types and formats, supported calculations, cross-field consistency, and safely verifiable bounds without recreating the game engine.
 
@@ -192,3 +192,62 @@ npm run validate
 ```
 
 The generated validation reports are available under `reports/`.
+
+## Extended QA capabilities
+
+The framework also includes senior-level QA capabilities beyond the benchmark minimum:
+
+- deterministic property-based mathematical invariant testing with `fast-check`;
+- controlled mutation tests for one-cent arithmetic corruption and defect localization;
+- configuration-driven symbol validation without inferring symbol sets from fixture frequency;
+- CLI filtering by fixture and validation category;
+- explicit analysis mode versus CI gate mode;
+- human and JSON report selection;
+- GitHub Actions quality gates;
+- Allure raw test-result generation through the Vitest integration;
+- specification-to-rule-to-test traceability documentation.
+
+### CLI examples
+
+```bash
+npm run validate
+npm run validate -- --fixture response_008.json
+npm run validate -- --category CALCULATION
+npm run validate -- --fixture response_008.json --category CALCULATION --format json
+npm run validate -- --config config/example-game.json
+npm run validate:gate -- --fixture response_008.json --category CALCULATION
+npm run validate -- --help
+```
+
+Analysis mode is the default because the supplied benchmark intentionally contains known defects. `--gate` / `validate:gate` is intended for datasets that are expected to be defect-free and returns a non-zero exit code when confirmed findings exist.
+
+### Game configuration
+
+The default benchmark configuration uses five base reels. An optional external JSON configuration may also supply an authoritative symbol set:
+
+```json
+{
+  "baseReelCount": 5,
+  "knownSymbols": [1, 2, 3, 4, 5]
+}
+```
+
+Without an authoritative `knownSymbols` configuration, symbol-membership validation remains `NOT_EVALUABLE` rather than inferring allowed symbols from observed fixture frequency.
+
+### Property-based and mutation testing
+
+`tests/property-based/math-invariants.test.ts` exercises mathematical invariants over deterministic generated inputs. It verifies exact line-win multiplication, one-cent mutation detection, generated reel-bound validity and primary-defect localization. Fixed seeds keep failures reproducible in CI.
+
+### CI and reproducibility
+
+The canonical local/CI quality gate is:
+
+```bash
+npm run verify
+```
+
+It runs TypeScript type checking, ESLint, Prettier verification, coverage-enforced tests and the production benchmark validator. GitHub Actions performs the same verification from a clean checkout using `npm ci` on Node 24 and uploads validation, coverage and Allure artifacts.
+
+### Traceability and dependency model
+
+See `docs/TRACEABILITY.md` for requirement-to-rule-to-test coverage and `docs/VALIDATION_MODEL.md` for prerequisite ownership, the four-state result model and cascade-prevention strategy.

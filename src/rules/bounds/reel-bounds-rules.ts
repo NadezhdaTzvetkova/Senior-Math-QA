@@ -1,4 +1,4 @@
-﻿import { hasOwn, isJsonObject } from '../../parsing/guards.js';
+import { hasOwn, isJsonObject } from '../../parsing/guards.js';
 import { evaluation, type ValidationRule } from '../../validation/rule.js';
 
 const RESULT_PATH = 'response.body.result';
@@ -281,12 +281,60 @@ export const B004_SYMBOL_KNOWN_SET: ValidationRule = {
   category: 'BOUNDS',
   specRef:
     'candidate-spec: symbols must belong to the known symbol set when configuration context is supplied',
-  evaluate: (context) =>
-    evaluation(context, B004_SYMBOL_KNOWN_SET, 'NOT_EVALUABLE', {
-      path: `${RESULT_PATH}.reelsBuffer`,
-      explanation:
-        'no authoritative symbol-set configuration was supplied, so symbol membership cannot be validated safely',
-    }),
+  evaluate: (context) => {
+    const knownSymbols = context.config.knownSymbols;
+
+    if (knownSymbols === undefined) {
+      return evaluation(context, B004_SYMBOL_KNOWN_SET, 'NOT_EVALUABLE', {
+        path: `${RESULT_PATH}.reelsBuffer`,
+        explanation:
+          'no authoritative symbol-set configuration was supplied, so symbol membership cannot be validated safely',
+      });
+    }
+
+    const result = getResult(context);
+
+    if (result === undefined || !Array.isArray(result.reelsBuffer)) {
+      return evaluation(context, B004_SYMBOL_KNOWN_SET, 'NOT_EVALUABLE', {
+        path: `${RESULT_PATH}.reelsBuffer`,
+        explanation:
+          'reelsBuffer must first pass structural validation before symbol membership can be checked',
+      });
+    }
+
+    const allowed = new Set(knownSymbols);
+
+    for (const [reelIndex, reel] of result.reelsBuffer.entries()) {
+      if (!Array.isArray(reel)) {
+        return evaluation(context, B004_SYMBOL_KNOWN_SET, 'NOT_EVALUABLE', {
+          path: `${RESULT_PATH}.reelsBuffer[${reelIndex}]`,
+          actual: reel,
+          explanation: 'each reel must be an array before symbol membership can be checked',
+        });
+      }
+
+      for (const [symbolIndex, symbol] of reel.entries()) {
+        if (typeof symbol !== 'number' || !Number.isSafeInteger(symbol)) {
+          return evaluation(context, B004_SYMBOL_KNOWN_SET, 'NOT_EVALUABLE', {
+            path: `${RESULT_PATH}.reelsBuffer[${reelIndex}][${symbolIndex}]`,
+            actual: symbol,
+            explanation: 'symbol membership requires integer symbol identifiers',
+          });
+        }
+
+        if (!allowed.has(symbol)) {
+          return evaluation(context, B004_SYMBOL_KNOWN_SET, 'FAIL', {
+            path: `${RESULT_PATH}.reelsBuffer[${reelIndex}][${symbolIndex}]`,
+            expected: knownSymbols,
+            actual: symbol,
+            explanation: 'symbol is not present in the configured authoritative symbol set',
+          });
+        }
+      }
+    }
+
+    return evaluation(context, B004_SYMBOL_KNOWN_SET, 'PASS');
+  },
 };
 
 export const REEL_AND_BOUNDS_RULES: readonly ValidationRule[] = [

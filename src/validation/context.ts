@@ -1,8 +1,9 @@
-﻿import { deriveSpinState, type SpinState } from '../domain/spin-state.js';
+import { deriveSpinState, type SpinState } from '../domain/spin-state.js';
 import { readPath, type PathLookup } from '../parsing/guards.js';
 
 export interface GameValidationConfig {
   readonly baseReelCount: number;
+  readonly knownSymbols?: readonly number[];
 }
 
 export interface ValidationContext {

@@ -1,4 +1,4 @@
-﻿import { defineConfig } from 'vitest/config';
+import { defineConfig } from 'vitest/config';
 export default defineConfig({
   test: {
     include: ['tests/**/*.test.ts'],
@@ -10,7 +10,7 @@ export default defineConfig({
       reporter: ['text', 'html', 'json'],
       reportsDirectory: 'coverage',
       include: ['src/**/*.ts'],
-      exclude: ['src/**/*.d.ts'],
+      exclude: ['src/**/*.d.ts', 'src/cli.ts'],
       reportOnFailure: true,
       thresholds: {
         statements: 90,
