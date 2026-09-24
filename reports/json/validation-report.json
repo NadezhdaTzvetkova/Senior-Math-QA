@@ -1,0 +1,688 @@
+{
+  "generatedFrom": {
+    "fixtureDirectory": "D:\\Projects\\Evolution\\Senior-Math-QA\\fixtures",
+    "fixtureCount": 30,
+    "ruleCount": 42
+  },
+  "aggregate": {
+    "fixtures": 30,
+    "fixturesWithFailures": 26,
+    "fixturesWithoutFailures": 4,
+    "totalRules": 1260,
+    "passed": 740,
+    "failed": 32,
+    "notApplicable": 344,
+    "notEvaluable": 144,
+    "failuresByCategory": {
+      "CONTRACT": 11,
+      "CALCULATION": 1,
+      "TYPE_FORMAT": 18,
+      "BOUNDS": 2
+    },
+    "failuresByRuleId": {
+      "C004_WIN_TOTAL_PRESENT": 3,
+      "M005_COMPONENT_AGGREGATION": 1,
+      "F005_STAKE_DECIMAL": 2,
+      "T001_MULTIPLIER_NUMERIC": 3,
+      "T003_GAME_MODE_NUMERIC": 3,
+      "C003_WIN_LINES_PRESENT": 3,
+      "C006_WM_LINES_PRESENT": 3,
+      "F002_WIN_TOTAL_DECIMAL": 3,
+      "F001_WIN_LINES_DECIMAL": 4,
+      "R002_BASE_MODE_WIDTH": 2,
+      "C012_WIN_LINES_ARRAY": 2,
+      "E001_SPIN_MODE_ENUM": 3
+    }
+  },
+  "fixtures": [
+    {
+      "fixtureName": "response_001.json",
+      "failures": [
+        {
+          "fixtureName": "response_001.json",
+          "ruleId": "C004_WIN_TOTAL_PRESENT",
+          "category": "CONTRACT",
+          "specRef": "candidate-spec: win must contain lines and total",
+          "path": "response.body.result.win.total",
+          "expected": "required field present",
+          "actualState": "MISSING",
+          "explanation": "win.total is required"
+        }
+      ],
+      "passed": 34,
+      "failed": 1,
+      "notApplicable": 2,
+      "notEvaluable": 5,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_002.json",
+      "failures": [
+        {
+          "fixtureName": "response_002.json",
+          "ruleId": "M005_COMPONENT_AGGREGATION",
+          "category": "CALCULATION",
+          "specRef": "candidate-spec: totals must include supported extra components such as instantWin, freeSpins, respin",
+          "path": "response.body.result",
+          "expected": {
+            "winTotal": 540,
+            "winsMultipliersTotal": 270
+          },
+          "actual": {
+            "winTotal": 541,
+            "winsMultipliersTotal": 270
+          },
+          "actualState": "PRESENT",
+          "explanation": "reported totals do not equal lines plus supported named component contributions"
+        }
+      ],
+      "passed": 36,
+      "failed": 1,
+      "notApplicable": 3,
+      "notEvaluable": 2,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_003.json",
+      "failures": [
+        {
+          "fixtureName": "response_003.json",
+          "ruleId": "F005_STAKE_DECIMAL",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: stake is a decimal string with exactly 2 fractional digits",
+          "path": "response.body.result.stake",
+          "expected": "decimal string with exactly 2 fractional digits",
+          "actual": 2,
+          "actualState": "PRESENT",
+          "explanation": "response.body.result.stake must use exact two-decimal string format"
+        },
+        {
+          "fixtureName": "response_003.json",
+          "ruleId": "T001_MULTIPLIER_NUMERIC",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: multiplier must be numeric",
+          "path": "response.body.result.multiplier",
+          "expected": "finite number",
+          "actual": "1",
+          "actualState": "PRESENT",
+          "explanation": "multiplier must be a finite numeric value"
+        }
+      ],
+      "passed": 21,
+      "failed": 2,
+      "notApplicable": 15,
+      "notEvaluable": 4,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_004.json",
+      "failures": [
+        {
+          "fixtureName": "response_004.json",
+          "ruleId": "T001_MULTIPLIER_NUMERIC",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: multiplier must be numeric",
+          "path": "response.body.result.multiplier",
+          "expected": "finite number",
+          "actual": "1",
+          "actualState": "PRESENT",
+          "explanation": "multiplier must be a finite numeric value"
+        }
+      ],
+      "passed": 22,
+      "failed": 1,
+      "notApplicable": 15,
+      "notEvaluable": 4,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_005.json",
+      "failures": [
+        {
+          "fixtureName": "response_005.json",
+          "ruleId": "T003_GAME_MODE_NUMERIC",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: gameMode when present must be numeric",
+          "path": "response.body.result.gameMode",
+          "expected": "finite number when present",
+          "actual": "0",
+          "actualState": "PRESENT",
+          "explanation": "gameMode must be numeric when present"
+        }
+      ],
+      "passed": 23,
+      "failed": 1,
+      "notApplicable": 15,
+      "notEvaluable": 3,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_006.json",
+      "failures": [
+        {
+          "fixtureName": "response_006.json",
+          "ruleId": "C003_WIN_LINES_PRESENT",
+          "category": "CONTRACT",
+          "specRef": "candidate-spec: win must contain lines and total",
+          "path": "response.body.result.win.lines",
+          "expected": "required field present",
+          "actualState": "MISSING",
+          "explanation": "win.lines is required"
+        },
+        {
+          "fixtureName": "response_006.json",
+          "ruleId": "C006_WM_LINES_PRESENT",
+          "category": "CONTRACT",
+          "specRef": "candidate-spec: winsMultipliers must contain lines and total",
+          "path": "response.body.result.winsMultipliers.lines",
+          "expected": "required field present",
+          "actualState": "MISSING",
+          "explanation": "winsMultipliers.lines is required"
+        }
+      ],
+      "passed": 21,
+      "failed": 2,
+      "notApplicable": 14,
+      "notEvaluable": 5,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_007.json",
+      "failures": [
+        {
+          "fixtureName": "response_007.json",
+          "ruleId": "C006_WM_LINES_PRESENT",
+          "category": "CONTRACT",
+          "specRef": "candidate-spec: winsMultipliers must contain lines and total",
+          "path": "response.body.result.winsMultipliers.lines",
+          "expected": "required field present",
+          "actualState": "MISSING",
+          "explanation": "winsMultipliers.lines is required"
+        }
+      ],
+      "passed": 22,
+      "failed": 1,
+      "notApplicable": 14,
+      "notEvaluable": 5,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_008.json",
+      "failures": [],
+      "passed": 37,
+      "failed": 0,
+      "notApplicable": 3,
+      "notEvaluable": 2,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_009.json",
+      "failures": [
+        {
+          "fixtureName": "response_009.json",
+          "ruleId": "F002_WIN_TOTAL_DECIMAL",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: win.total monetary value is a decimal string with exactly 2 fractional digits",
+          "path": "response.body.result.win.total",
+          "expected": "decimal string with exactly 2 fractional digits",
+          "actual": "0",
+          "actualState": "PRESENT",
+          "explanation": "response.body.result.win.total must use exact two-decimal string format"
+        }
+      ],
+      "passed": 23,
+      "failed": 1,
+      "notApplicable": 14,
+      "notEvaluable": 4,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_010.json",
+      "failures": [
+        {
+          "fixtureName": "response_010.json",
+          "ruleId": "F002_WIN_TOTAL_DECIMAL",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: win.total monetary value is a decimal string with exactly 2 fractional digits",
+          "path": "response.body.result.win.total",
+          "expected": "decimal string with exactly 2 fractional digits",
+          "actual": "0",
+          "actualState": "PRESENT",
+          "explanation": "response.body.result.win.total must use exact two-decimal string format"
+        }
+      ],
+      "passed": 23,
+      "failed": 1,
+      "notApplicable": 14,
+      "notEvaluable": 4,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_011.json",
+      "failures": [
+        {
+          "fixtureName": "response_011.json",
+          "ruleId": "F001_WIN_LINES_DECIMAL",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: win.lines monetary value is a decimal string with exactly 2 fractional digits",
+          "path": "response.body.result.win.lines",
+          "expected": "decimal string with exactly 2 fractional digits",
+          "actual": "0.4",
+          "actualState": "PRESENT",
+          "explanation": "response.body.result.win.lines must use exact two-decimal string format"
+        }
+      ],
+      "passed": 35,
+      "failed": 1,
+      "notApplicable": 2,
+      "notEvaluable": 4,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_012.json",
+      "failures": [
+        {
+          "fixtureName": "response_012.json",
+          "ruleId": "F001_WIN_LINES_DECIMAL",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: win.lines monetary value is a decimal string with exactly 2 fractional digits",
+          "path": "response.body.result.win.lines",
+          "expected": "decimal string with exactly 2 fractional digits",
+          "actual": "0",
+          "actualState": "PRESENT",
+          "explanation": "response.body.result.win.lines must use exact two-decimal string format"
+        },
+        {
+          "fixtureName": "response_012.json",
+          "ruleId": "R002_BASE_MODE_WIDTH",
+          "category": "BOUNDS",
+          "specRef": "candidate-spec: expected visible width is 5 reels in base mode",
+          "path": "response.body.result.reelsBuffer",
+          "expected": 5,
+          "actual": 4,
+          "actualState": "PRESENT",
+          "explanation": "base-mode reelsBuffer width does not match configured visible reel count"
+        }
+      ],
+      "passed": 23,
+      "failed": 2,
+      "notApplicable": 14,
+      "notEvaluable": 3,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_013.json",
+      "failures": [
+        {
+          "fixtureName": "response_013.json",
+          "ruleId": "C012_WIN_LINES_ARRAY",
+          "category": "CONTRACT",
+          "specRef": "candidate-spec: winLines when present must be an array",
+          "path": "response.body.result.winLines",
+          "expected": "array when present",
+          "actual": {
+            "malformed": true
+          },
+          "actualState": "PRESENT",
+          "explanation": "winLines must be an array when present"
+        }
+      ],
+      "passed": 23,
+      "failed": 1,
+      "notApplicable": 2,
+      "notEvaluable": 16,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_014.json",
+      "failures": [
+        {
+          "fixtureName": "response_014.json",
+          "ruleId": "E001_SPIN_MODE_ENUM",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: spinMode enum Normal, FreeSpins, WinSpins, WildSpins, Respin",
+          "path": "response.body.result.spinMode",
+          "expected": "Normal | FreeSpins | WinSpins | WildSpins | Respin",
+          "actual": "InvalidSpinMode",
+          "actualState": "PRESENT",
+          "explanation": "spinMode is outside the supported enum"
+        }
+      ],
+      "passed": 22,
+      "failed": 1,
+      "notApplicable": 13,
+      "notEvaluable": 6,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_015.json",
+      "failures": [],
+      "passed": 24,
+      "failed": 0,
+      "notApplicable": 15,
+      "notEvaluable": 3,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_016.json",
+      "failures": [
+        {
+          "fixtureName": "response_016.json",
+          "ruleId": "C004_WIN_TOTAL_PRESENT",
+          "category": "CONTRACT",
+          "specRef": "candidate-spec: win must contain lines and total",
+          "path": "response.body.result.win.total",
+          "expected": "required field present",
+          "actualState": "MISSING",
+          "explanation": "win.total is required"
+        }
+      ],
+      "passed": 23,
+      "failed": 1,
+      "notApplicable": 14,
+      "notEvaluable": 4,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_017.json",
+      "failures": [],
+      "passed": 25,
+      "failed": 0,
+      "notApplicable": 15,
+      "notEvaluable": 2,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_018.json",
+      "failures": [
+        {
+          "fixtureName": "response_018.json",
+          "ruleId": "T001_MULTIPLIER_NUMERIC",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: multiplier must be numeric",
+          "path": "response.body.result.multiplier",
+          "expected": "finite number",
+          "actual": "1",
+          "actualState": "PRESENT",
+          "explanation": "multiplier must be a finite numeric value"
+        },
+        {
+          "fixtureName": "response_018.json",
+          "ruleId": "T003_GAME_MODE_NUMERIC",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: gameMode when present must be numeric",
+          "path": "response.body.result.gameMode",
+          "expected": "finite number when present",
+          "actual": "0",
+          "actualState": "PRESENT",
+          "explanation": "gameMode must be numeric when present"
+        }
+      ],
+      "passed": 21,
+      "failed": 2,
+      "notApplicable": 15,
+      "notEvaluable": 4,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_019.json",
+      "failures": [
+        {
+          "fixtureName": "response_019.json",
+          "ruleId": "T003_GAME_MODE_NUMERIC",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: gameMode when present must be numeric",
+          "path": "response.body.result.gameMode",
+          "expected": "finite number when present",
+          "actual": "0",
+          "actualState": "PRESENT",
+          "explanation": "gameMode must be numeric when present"
+        }
+      ],
+      "passed": 23,
+      "failed": 1,
+      "notApplicable": 15,
+      "notEvaluable": 3,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_020.json",
+      "failures": [
+        {
+          "fixtureName": "response_020.json",
+          "ruleId": "C003_WIN_LINES_PRESENT",
+          "category": "CONTRACT",
+          "specRef": "candidate-spec: win must contain lines and total",
+          "path": "response.body.result.win.lines",
+          "expected": "required field present",
+          "actualState": "MISSING",
+          "explanation": "win.lines is required"
+        }
+      ],
+      "passed": 22,
+      "failed": 1,
+      "notApplicable": 14,
+      "notEvaluable": 5,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_021.json",
+      "failures": [
+        {
+          "fixtureName": "response_021.json",
+          "ruleId": "C006_WM_LINES_PRESENT",
+          "category": "CONTRACT",
+          "specRef": "candidate-spec: winsMultipliers must contain lines and total",
+          "path": "response.body.result.winsMultipliers.lines",
+          "expected": "required field present",
+          "actualState": "MISSING",
+          "explanation": "winsMultipliers.lines is required"
+        }
+      ],
+      "passed": 21,
+      "failed": 1,
+      "notApplicable": 11,
+      "notEvaluable": 9,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_022.json",
+      "failures": [
+        {
+          "fixtureName": "response_022.json",
+          "ruleId": "C003_WIN_LINES_PRESENT",
+          "category": "CONTRACT",
+          "specRef": "candidate-spec: win must contain lines and total",
+          "path": "response.body.result.win.lines",
+          "expected": "required field present",
+          "actualState": "MISSING",
+          "explanation": "win.lines is required"
+        }
+      ],
+      "passed": 22,
+      "failed": 1,
+      "notApplicable": 15,
+      "notEvaluable": 4,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_023.json",
+      "failures": [],
+      "passed": 24,
+      "failed": 0,
+      "notApplicable": 15,
+      "notEvaluable": 3,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_024.json",
+      "failures": [
+        {
+          "fixtureName": "response_024.json",
+          "ruleId": "F001_WIN_LINES_DECIMAL",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: win.lines monetary value is a decimal string with exactly 2 fractional digits",
+          "path": "response.body.result.win.lines",
+          "expected": "decimal string with exactly 2 fractional digits",
+          "actual": "0",
+          "actualState": "PRESENT",
+          "explanation": "response.body.result.win.lines must use exact two-decimal string format"
+        },
+        {
+          "fixtureName": "response_024.json",
+          "ruleId": "F002_WIN_TOTAL_DECIMAL",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: win.total monetary value is a decimal string with exactly 2 fractional digits",
+          "path": "response.body.result.win.total",
+          "expected": "decimal string with exactly 2 fractional digits",
+          "actual": "0",
+          "actualState": "PRESENT",
+          "explanation": "response.body.result.win.total must use exact two-decimal string format"
+        }
+      ],
+      "passed": 23,
+      "failed": 2,
+      "notApplicable": 14,
+      "notEvaluable": 3,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_025.json",
+      "failures": [
+        {
+          "fixtureName": "response_025.json",
+          "ruleId": "F001_WIN_LINES_DECIMAL",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: win.lines monetary value is a decimal string with exactly 2 fractional digits",
+          "path": "response.body.result.win.lines",
+          "expected": "decimal string with exactly 2 fractional digits",
+          "actual": "0",
+          "actualState": "PRESENT",
+          "explanation": "response.body.result.win.lines must use exact two-decimal string format"
+        }
+      ],
+      "passed": 23,
+      "failed": 1,
+      "notApplicable": 14,
+      "notEvaluable": 4,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_026.json",
+      "failures": [
+        {
+          "fixtureName": "response_026.json",
+          "ruleId": "R002_BASE_MODE_WIDTH",
+          "category": "BOUNDS",
+          "specRef": "candidate-spec: expected visible width is 5 reels in base mode",
+          "path": "response.body.result.reelsBuffer",
+          "expected": 5,
+          "actual": 4,
+          "actualState": "PRESENT",
+          "explanation": "base-mode reelsBuffer width does not match configured visible reel count"
+        }
+      ],
+      "passed": 36,
+      "failed": 1,
+      "notApplicable": 3,
+      "notEvaluable": 2,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_027.json",
+      "failures": [
+        {
+          "fixtureName": "response_027.json",
+          "ruleId": "C012_WIN_LINES_ARRAY",
+          "category": "CONTRACT",
+          "specRef": "candidate-spec: winLines when present must be an array",
+          "path": "response.body.result.winLines",
+          "expected": "array when present",
+          "actual": {
+            "malformed": true
+          },
+          "actualState": "PRESENT",
+          "explanation": "winLines must be an array when present"
+        },
+        {
+          "fixtureName": "response_027.json",
+          "ruleId": "E001_SPIN_MODE_ENUM",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: spinMode enum Normal, FreeSpins, WinSpins, WildSpins, Respin",
+          "path": "response.body.result.spinMode",
+          "expected": "Normal | FreeSpins | WinSpins | WildSpins | Respin",
+          "actual": "InvalidSpinMode",
+          "actualState": "PRESENT",
+          "explanation": "spinMode is outside the supported enum"
+        }
+      ],
+      "passed": 21,
+      "failed": 2,
+      "notApplicable": 2,
+      "notEvaluable": 17,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_028.json",
+      "failures": [
+        {
+          "fixtureName": "response_028.json",
+          "ruleId": "E001_SPIN_MODE_ENUM",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: spinMode enum Normal, FreeSpins, WinSpins, WildSpins, Respin",
+          "path": "response.body.result.spinMode",
+          "expected": "Normal | FreeSpins | WinSpins | WildSpins | Respin",
+          "actual": "InvalidSpinMode",
+          "actualState": "PRESENT",
+          "explanation": "spinMode is outside the supported enum"
+        }
+      ],
+      "passed": 22,
+      "failed": 1,
+      "notApplicable": 13,
+      "notEvaluable": 6,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_029.json",
+      "failures": [
+        {
+          "fixtureName": "response_029.json",
+          "ruleId": "C004_WIN_TOTAL_PRESENT",
+          "category": "CONTRACT",
+          "specRef": "candidate-spec: win must contain lines and total",
+          "path": "response.body.result.win.total",
+          "expected": "required field present",
+          "actualState": "MISSING",
+          "explanation": "win.total is required"
+        }
+      ],
+      "passed": 22,
+      "failed": 1,
+      "notApplicable": 14,
+      "notEvaluable": 5,
+      "totalRules": 42
+    },
+    {
+      "fixtureName": "response_030.json",
+      "failures": [
+        {
+          "fixtureName": "response_030.json",
+          "ruleId": "F005_STAKE_DECIMAL",
+          "category": "TYPE_FORMAT",
+          "specRef": "candidate-spec: stake is a decimal string with exactly 2 fractional digits",
+          "path": "response.body.result.stake",
+          "expected": "decimal string with exactly 2 fractional digits",
+          "actual": 2,
+          "actualState": "PRESENT",
+          "explanation": "response.body.result.stake must use exact two-decimal string format"
+        }
+      ],
+      "passed": 23,
+      "failed": 1,
+      "notApplicable": 15,
+      "notEvaluable": 3,
+      "totalRules": 42
+    }
+  ]
+}

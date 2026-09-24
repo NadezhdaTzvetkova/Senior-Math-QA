@@ -1,0 +1,315 @@
+Senior Math QA Validation Report
+Fixtures processed: 30
+Fixtures with confirmed failures: 26
+Fixtures without confirmed failures: 4
+Total rule evaluations: 1260
+PASS: 740
+FAIL: 32
+NOT_APPLICABLE: 344
+NOT_EVALUABLE: 144
+Failures by category:
+  CONTRACT: 11
+  CALCULATION: 1
+  TYPE_FORMAT: 18
+  BOUNDS: 2
+Failures by rule:
+  C004_WIN_TOTAL_PRESENT: 3
+  M005_COMPONENT_AGGREGATION: 1
+  F005_STAKE_DECIMAL: 2
+  T001_MULTIPLIER_NUMERIC: 3
+  T003_GAME_MODE_NUMERIC: 3
+  C003_WIN_LINES_PRESENT: 3
+  C006_WM_LINES_PRESENT: 3
+  F002_WIN_TOTAL_DECIMAL: 3
+  F001_WIN_LINES_DECIMAL: 4
+  R002_BASE_MODE_WIDTH: 2
+  C012_WIN_LINES_ARRAY: 2
+  E001_SPIN_MODE_ENUM: 3
+
+Fixture: response_001.json | Failures: 1 | PASS: 34 | NOT_APPLICABLE: 2 | NOT_EVALUABLE: 5 | Total rules: 42
+  1. [C004_WIN_TOTAL_PRESENT] CONTRACT
+     Spec: candidate-spec: win must contain lines and total
+     Path: response.body.result.win.total
+     Expected: "required field present"
+     Actual: <MISSING>
+     Actual state: MISSING
+     Explanation: win.total is required
+
+Fixture: response_002.json | Failures: 1 | PASS: 36 | NOT_APPLICABLE: 3 | NOT_EVALUABLE: 2 | Total rules: 42
+  1. [M005_COMPONENT_AGGREGATION] CALCULATION
+     Spec: candidate-spec: totals must include supported extra components such as instantWin, freeSpins, respin
+     Path: response.body.result
+     Expected: {"winTotal":540,"winsMultipliersTotal":270}
+     Actual: {"winTotal":541,"winsMultipliersTotal":270}
+     Actual state: PRESENT
+     Explanation: reported totals do not equal lines plus supported named component contributions
+
+Fixture: response_003.json | Failures: 2 | PASS: 21 | NOT_APPLICABLE: 15 | NOT_EVALUABLE: 4 | Total rules: 42
+  1. [F005_STAKE_DECIMAL] TYPE_FORMAT
+     Spec: candidate-spec: stake is a decimal string with exactly 2 fractional digits
+     Path: response.body.result.stake
+     Expected: "decimal string with exactly 2 fractional digits"
+     Actual: 2
+     Actual state: PRESENT
+     Explanation: response.body.result.stake must use exact two-decimal string format
+  2. [T001_MULTIPLIER_NUMERIC] TYPE_FORMAT
+     Spec: candidate-spec: multiplier must be numeric
+     Path: response.body.result.multiplier
+     Expected: "finite number"
+     Actual: "1"
+     Actual state: PRESENT
+     Explanation: multiplier must be a finite numeric value
+
+Fixture: response_004.json | Failures: 1 | PASS: 22 | NOT_APPLICABLE: 15 | NOT_EVALUABLE: 4 | Total rules: 42
+  1. [T001_MULTIPLIER_NUMERIC] TYPE_FORMAT
+     Spec: candidate-spec: multiplier must be numeric
+     Path: response.body.result.multiplier
+     Expected: "finite number"
+     Actual: "1"
+     Actual state: PRESENT
+     Explanation: multiplier must be a finite numeric value
+
+Fixture: response_005.json | Failures: 1 | PASS: 23 | NOT_APPLICABLE: 15 | NOT_EVALUABLE: 3 | Total rules: 42
+  1. [T003_GAME_MODE_NUMERIC] TYPE_FORMAT
+     Spec: candidate-spec: gameMode when present must be numeric
+     Path: response.body.result.gameMode
+     Expected: "finite number when present"
+     Actual: "0"
+     Actual state: PRESENT
+     Explanation: gameMode must be numeric when present
+
+Fixture: response_006.json | Failures: 2 | PASS: 21 | NOT_APPLICABLE: 14 | NOT_EVALUABLE: 5 | Total rules: 42
+  1. [C003_WIN_LINES_PRESENT] CONTRACT
+     Spec: candidate-spec: win must contain lines and total
+     Path: response.body.result.win.lines
+     Expected: "required field present"
+     Actual: <MISSING>
+     Actual state: MISSING
+     Explanation: win.lines is required
+  2. [C006_WM_LINES_PRESENT] CONTRACT
+     Spec: candidate-spec: winsMultipliers must contain lines and total
+     Path: response.body.result.winsMultipliers.lines
+     Expected: "required field present"
+     Actual: <MISSING>
+     Actual state: MISSING
+     Explanation: winsMultipliers.lines is required
+
+Fixture: response_007.json | Failures: 1 | PASS: 22 | NOT_APPLICABLE: 14 | NOT_EVALUABLE: 5 | Total rules: 42
+  1. [C006_WM_LINES_PRESENT] CONTRACT
+     Spec: candidate-spec: winsMultipliers must contain lines and total
+     Path: response.body.result.winsMultipliers.lines
+     Expected: "required field present"
+     Actual: <MISSING>
+     Actual state: MISSING
+     Explanation: winsMultipliers.lines is required
+
+Fixture: response_008.json | Failures: 0 | PASS: 37 | NOT_APPLICABLE: 3 | NOT_EVALUABLE: 2 | Total rules: 42
+  No confirmed validation failures.
+
+Fixture: response_009.json | Failures: 1 | PASS: 23 | NOT_APPLICABLE: 14 | NOT_EVALUABLE: 4 | Total rules: 42
+  1. [F002_WIN_TOTAL_DECIMAL] TYPE_FORMAT
+     Spec: candidate-spec: win.total monetary value is a decimal string with exactly 2 fractional digits
+     Path: response.body.result.win.total
+     Expected: "decimal string with exactly 2 fractional digits"
+     Actual: "0"
+     Actual state: PRESENT
+     Explanation: response.body.result.win.total must use exact two-decimal string format
+
+Fixture: response_010.json | Failures: 1 | PASS: 23 | NOT_APPLICABLE: 14 | NOT_EVALUABLE: 4 | Total rules: 42
+  1. [F002_WIN_TOTAL_DECIMAL] TYPE_FORMAT
+     Spec: candidate-spec: win.total monetary value is a decimal string with exactly 2 fractional digits
+     Path: response.body.result.win.total
+     Expected: "decimal string with exactly 2 fractional digits"
+     Actual: "0"
+     Actual state: PRESENT
+     Explanation: response.body.result.win.total must use exact two-decimal string format
+
+Fixture: response_011.json | Failures: 1 | PASS: 35 | NOT_APPLICABLE: 2 | NOT_EVALUABLE: 4 | Total rules: 42
+  1. [F001_WIN_LINES_DECIMAL] TYPE_FORMAT
+     Spec: candidate-spec: win.lines monetary value is a decimal string with exactly 2 fractional digits
+     Path: response.body.result.win.lines
+     Expected: "decimal string with exactly 2 fractional digits"
+     Actual: "0.4"
+     Actual state: PRESENT
+     Explanation: response.body.result.win.lines must use exact two-decimal string format
+
+Fixture: response_012.json | Failures: 2 | PASS: 23 | NOT_APPLICABLE: 14 | NOT_EVALUABLE: 3 | Total rules: 42
+  1. [F001_WIN_LINES_DECIMAL] TYPE_FORMAT
+     Spec: candidate-spec: win.lines monetary value is a decimal string with exactly 2 fractional digits
+     Path: response.body.result.win.lines
+     Expected: "decimal string with exactly 2 fractional digits"
+     Actual: "0"
+     Actual state: PRESENT
+     Explanation: response.body.result.win.lines must use exact two-decimal string format
+  2. [R002_BASE_MODE_WIDTH] BOUNDS
+     Spec: candidate-spec: expected visible width is 5 reels in base mode
+     Path: response.body.result.reelsBuffer
+     Expected: 5
+     Actual: 4
+     Actual state: PRESENT
+     Explanation: base-mode reelsBuffer width does not match configured visible reel count
+
+Fixture: response_013.json | Failures: 1 | PASS: 23 | NOT_APPLICABLE: 2 | NOT_EVALUABLE: 16 | Total rules: 42
+  1. [C012_WIN_LINES_ARRAY] CONTRACT
+     Spec: candidate-spec: winLines when present must be an array
+     Path: response.body.result.winLines
+     Expected: "array when present"
+     Actual: {"malformed":true}
+     Actual state: PRESENT
+     Explanation: winLines must be an array when present
+
+Fixture: response_014.json | Failures: 1 | PASS: 22 | NOT_APPLICABLE: 13 | NOT_EVALUABLE: 6 | Total rules: 42
+  1. [E001_SPIN_MODE_ENUM] TYPE_FORMAT
+     Spec: candidate-spec: spinMode enum Normal, FreeSpins, WinSpins, WildSpins, Respin
+     Path: response.body.result.spinMode
+     Expected: "Normal | FreeSpins | WinSpins | WildSpins | Respin"
+     Actual: "InvalidSpinMode"
+     Actual state: PRESENT
+     Explanation: spinMode is outside the supported enum
+
+Fixture: response_015.json | Failures: 0 | PASS: 24 | NOT_APPLICABLE: 15 | NOT_EVALUABLE: 3 | Total rules: 42
+  No confirmed validation failures.
+
+Fixture: response_016.json | Failures: 1 | PASS: 23 | NOT_APPLICABLE: 14 | NOT_EVALUABLE: 4 | Total rules: 42
+  1. [C004_WIN_TOTAL_PRESENT] CONTRACT
+     Spec: candidate-spec: win must contain lines and total
+     Path: response.body.result.win.total
+     Expected: "required field present"
+     Actual: <MISSING>
+     Actual state: MISSING
+     Explanation: win.total is required
+
+Fixture: response_017.json | Failures: 0 | PASS: 25 | NOT_APPLICABLE: 15 | NOT_EVALUABLE: 2 | Total rules: 42
+  No confirmed validation failures.
+
+Fixture: response_018.json | Failures: 2 | PASS: 21 | NOT_APPLICABLE: 15 | NOT_EVALUABLE: 4 | Total rules: 42
+  1. [T001_MULTIPLIER_NUMERIC] TYPE_FORMAT
+     Spec: candidate-spec: multiplier must be numeric
+     Path: response.body.result.multiplier
+     Expected: "finite number"
+     Actual: "1"
+     Actual state: PRESENT
+     Explanation: multiplier must be a finite numeric value
+  2. [T003_GAME_MODE_NUMERIC] TYPE_FORMAT
+     Spec: candidate-spec: gameMode when present must be numeric
+     Path: response.body.result.gameMode
+     Expected: "finite number when present"
+     Actual: "0"
+     Actual state: PRESENT
+     Explanation: gameMode must be numeric when present
+
+Fixture: response_019.json | Failures: 1 | PASS: 23 | NOT_APPLICABLE: 15 | NOT_EVALUABLE: 3 | Total rules: 42
+  1. [T003_GAME_MODE_NUMERIC] TYPE_FORMAT
+     Spec: candidate-spec: gameMode when present must be numeric
+     Path: response.body.result.gameMode
+     Expected: "finite number when present"
+     Actual: "0"
+     Actual state: PRESENT
+     Explanation: gameMode must be numeric when present
+
+Fixture: response_020.json | Failures: 1 | PASS: 22 | NOT_APPLICABLE: 14 | NOT_EVALUABLE: 5 | Total rules: 42
+  1. [C003_WIN_LINES_PRESENT] CONTRACT
+     Spec: candidate-spec: win must contain lines and total
+     Path: response.body.result.win.lines
+     Expected: "required field present"
+     Actual: <MISSING>
+     Actual state: MISSING
+     Explanation: win.lines is required
+
+Fixture: response_021.json | Failures: 1 | PASS: 21 | NOT_APPLICABLE: 11 | NOT_EVALUABLE: 9 | Total rules: 42
+  1. [C006_WM_LINES_PRESENT] CONTRACT
+     Spec: candidate-spec: winsMultipliers must contain lines and total
+     Path: response.body.result.winsMultipliers.lines
+     Expected: "required field present"
+     Actual: <MISSING>
+     Actual state: MISSING
+     Explanation: winsMultipliers.lines is required
+
+Fixture: response_022.json | Failures: 1 | PASS: 22 | NOT_APPLICABLE: 15 | NOT_EVALUABLE: 4 | Total rules: 42
+  1. [C003_WIN_LINES_PRESENT] CONTRACT
+     Spec: candidate-spec: win must contain lines and total
+     Path: response.body.result.win.lines
+     Expected: "required field present"
+     Actual: <MISSING>
+     Actual state: MISSING
+     Explanation: win.lines is required
+
+Fixture: response_023.json | Failures: 0 | PASS: 24 | NOT_APPLICABLE: 15 | NOT_EVALUABLE: 3 | Total rules: 42
+  No confirmed validation failures.
+
+Fixture: response_024.json | Failures: 2 | PASS: 23 | NOT_APPLICABLE: 14 | NOT_EVALUABLE: 3 | Total rules: 42
+  1. [F001_WIN_LINES_DECIMAL] TYPE_FORMAT
+     Spec: candidate-spec: win.lines monetary value is a decimal string with exactly 2 fractional digits
+     Path: response.body.result.win.lines
+     Expected: "decimal string with exactly 2 fractional digits"
+     Actual: "0"
+     Actual state: PRESENT
+     Explanation: response.body.result.win.lines must use exact two-decimal string format
+  2. [F002_WIN_TOTAL_DECIMAL] TYPE_FORMAT
+     Spec: candidate-spec: win.total monetary value is a decimal string with exactly 2 fractional digits
+     Path: response.body.result.win.total
+     Expected: "decimal string with exactly 2 fractional digits"
+     Actual: "0"
+     Actual state: PRESENT
+     Explanation: response.body.result.win.total must use exact two-decimal string format
+
+Fixture: response_025.json | Failures: 1 | PASS: 23 | NOT_APPLICABLE: 14 | NOT_EVALUABLE: 4 | Total rules: 42
+  1. [F001_WIN_LINES_DECIMAL] TYPE_FORMAT
+     Spec: candidate-spec: win.lines monetary value is a decimal string with exactly 2 fractional digits
+     Path: response.body.result.win.lines
+     Expected: "decimal string with exactly 2 fractional digits"
+     Actual: "0"
+     Actual state: PRESENT
+     Explanation: response.body.result.win.lines must use exact two-decimal string format
+
+Fixture: response_026.json | Failures: 1 | PASS: 36 | NOT_APPLICABLE: 3 | NOT_EVALUABLE: 2 | Total rules: 42
+  1. [R002_BASE_MODE_WIDTH] BOUNDS
+     Spec: candidate-spec: expected visible width is 5 reels in base mode
+     Path: response.body.result.reelsBuffer
+     Expected: 5
+     Actual: 4
+     Actual state: PRESENT
+     Explanation: base-mode reelsBuffer width does not match configured visible reel count
+
+Fixture: response_027.json | Failures: 2 | PASS: 21 | NOT_APPLICABLE: 2 | NOT_EVALUABLE: 17 | Total rules: 42
+  1. [C012_WIN_LINES_ARRAY] CONTRACT
+     Spec: candidate-spec: winLines when present must be an array
+     Path: response.body.result.winLines
+     Expected: "array when present"
+     Actual: {"malformed":true}
+     Actual state: PRESENT
+     Explanation: winLines must be an array when present
+  2. [E001_SPIN_MODE_ENUM] TYPE_FORMAT
+     Spec: candidate-spec: spinMode enum Normal, FreeSpins, WinSpins, WildSpins, Respin
+     Path: response.body.result.spinMode
+     Expected: "Normal | FreeSpins | WinSpins | WildSpins | Respin"
+     Actual: "InvalidSpinMode"
+     Actual state: PRESENT
+     Explanation: spinMode is outside the supported enum
+
+Fixture: response_028.json | Failures: 1 | PASS: 22 | NOT_APPLICABLE: 13 | NOT_EVALUABLE: 6 | Total rules: 42
+  1. [E001_SPIN_MODE_ENUM] TYPE_FORMAT
+     Spec: candidate-spec: spinMode enum Normal, FreeSpins, WinSpins, WildSpins, Respin
+     Path: response.body.result.spinMode
+     Expected: "Normal | FreeSpins | WinSpins | WildSpins | Respin"
+     Actual: "InvalidSpinMode"
+     Actual state: PRESENT
+     Explanation: spinMode is outside the supported enum
+
+Fixture: response_029.json | Failures: 1 | PASS: 22 | NOT_APPLICABLE: 14 | NOT_EVALUABLE: 5 | Total rules: 42
+  1. [C004_WIN_TOTAL_PRESENT] CONTRACT
+     Spec: candidate-spec: win must contain lines and total
+     Path: response.body.result.win.total
+     Expected: "required field present"
+     Actual: <MISSING>
+     Actual state: MISSING
+     Explanation: win.total is required
+
+Fixture: response_030.json | Failures: 1 | PASS: 23 | NOT_APPLICABLE: 15 | NOT_EVALUABLE: 3 | Total rules: 42
+  1. [F005_STAKE_DECIMAL] TYPE_FORMAT
+     Spec: candidate-spec: stake is a decimal string with exactly 2 fractional digits
+     Path: response.body.result.stake
+     Expected: "decimal string with exactly 2 fractional digits"
+     Actual: 2
+     Actual state: PRESENT
+     Explanation: response.body.result.stake must use exact two-decimal string format

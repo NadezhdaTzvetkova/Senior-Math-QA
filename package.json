@@ -9,7 +9,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "validate": "tsx src/run-validation.ts"
   },
   "keywords": [],
   "type": "module",
@@ -22,10 +23,14 @@
     "allure-vitest": "^3.12.2",
     "eslint": "^10.11.0",
     "prettier": "^3.9.8",
+    "tsx": "^4.23.15",
     "typescript": "^6.0.3",
     "vitest": "^5.0.1"
   },
   "engines": {
     "node": ">=24 <25"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }
