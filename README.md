@@ -6,6 +6,8 @@ TypeScript validation framework for the Senior Math QA take-home exercise. The s
 
 Requirements: Node.js 24.x and npm.
 
+For the canonical end-to-end quality gate, run `npm run verify`.
+
 ```powershell
 npm ci
 npm test
@@ -26,18 +28,18 @@ npm run format:check
 - 30 supplied fixtures
 - 42 validation rules per fixture
 - 1,260 production rule evaluations
-- 14 automated test files
-- 158 automated tests
+- 25 automated test files
+- 215 automated tests
 - 32 confirmed findings
 - 26 fixtures with confirmed findings
 - 4 fixtures without confirmed findings
 
 Measured coverage:
 
-- Statements: 93.71%
-- Branches: 88.69%
+- Statements: 92.79%
+- Branches: 87.52%
 - Functions: 100%
-- Lines: 93.65%
+- Lines: 92.72%
 
 Enforced minimum coverage thresholds:
 
@@ -168,6 +170,9 @@ Synthetic adversarial tests supplement the supplied fixtures and cover malformed
 - `docs/ASSUMPTIONS.md` — assumptions and unresolved specification ambiguities
 - `docs/RULE_CATALOGUE.md` — rule catalogue and intent
 - `docs/RESPONSE_ANALYSIS.md` — manual fixture-by-fixture analysis
+- `docs/MATHEMATICAL_VALIDATION.md` — exact arithmetic, properties, metamorphic checks and mathematical exclusions
+- `docs/TRACEABILITY.md` — specification-to-rule-to-test traceability
+- `docs/VALIDATION_MODEL.md` — prerequisite ownership and four-state evaluation model
 
 ## Language Choice
 
@@ -236,7 +241,7 @@ Without an authoritative `knownSymbols` configuration, symbol-membership validat
 
 ### Property-based and mutation testing
 
-`tests/property-based/math-invariants.test.ts` exercises mathematical invariants over deterministic generated inputs. It verifies exact line-win multiplication, one-cent mutation detection, generated reel-bound validity and primary-defect localization. Fixed seeds keep failures reproducible in CI.
+The `tests/property-based/` suites exercise deterministic generated inputs across line-win and cash-symbol formulas, supported-component aggregation, safe-integer and monetary boundaries, fractional and overflow multiplier behavior, multi-line permutation invariance, controlled mutations, reel-bound validity and defect localization. Selected calculations are cross-checked against an independent BigInt test oracle rather than reusing production arithmetic helpers. Fixed seeds and shrinking keep failures reproducible and diagnosable in CI.
 
 ### CI and reproducibility
 
